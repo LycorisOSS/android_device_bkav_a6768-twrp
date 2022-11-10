@@ -9,6 +9,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
+# This device supports Virtual A/B.
+$(call inherit-product,  $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
@@ -16,7 +19,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/bkav/a6768/device.mk)
 
 PRODUCT_DEVICE := a6768
-PRODUCT_NAME := omni_a6768
+PRODUCT_NAME := twrp_a6768
 PRODUCT_BRAND := Bphone
 PRODUCT_MODEL := Bphone A Series
 PRODUCT_MANUFACTURER := BKAV

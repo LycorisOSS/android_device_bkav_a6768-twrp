@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_a6768.mk
+    $(LOCAL_DIR)/twrp_a6768.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_a6768-eng \
-    omni_a6768-userdebug
+    twrp_a6768-eng \
+    twrp_a6768-userdebug
