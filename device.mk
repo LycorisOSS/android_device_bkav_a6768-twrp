@@ -54,17 +54,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
-# Health HAL
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl.recovery
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# tzdata
-PRODUCT_PACKAGES += \
-    tzdata_twrp
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
